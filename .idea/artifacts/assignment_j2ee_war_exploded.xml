@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="assignment-j2ee:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/assignment_j2ee_war_exploded</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="assignment-j2ee" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="jackson-databind-2.9.8" />
+          <element id="library" level="project" name="mongo-java-driver-3.0.4" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="assignment-j2ee/web/Web" />
+      <element id="javaee-facet-resources" facet="assignment-j2ee/web/Web" />
+      <element id="javaee-facet-resources" facet="assignment-j2ee/javaeeApplication/javaEEApplication" />
+    </root>
+  </artifact>
+</component>

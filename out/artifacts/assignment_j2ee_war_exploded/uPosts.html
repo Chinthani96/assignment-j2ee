@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="cache-control" content="max-age=0" />
+  <meta http-equiv="cache-control" content="no-cache" />
+  <meta http-equiv="expires" content="0" />
+  <meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+  <meta http-equiv="pragma" content="no-cache" />
+  <title>Company | Posts</title>
+  <link rel="stylesheet" href="css/main2.css" type="text/css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+  <!-------------------------------------------------------- NAVBAR!!!!!!!! ----------------------------------------------------------------------------->
+  
+  <header class="header">
+    <nav class="navbar navbar-style">
+      <div class="container">
+        <div class="navbar-header">
+            <img class="logo" src="img/logo2.jpg">areer | GO<img class="logo" src="img/logo3.png">
+          </div>
+
+        <ul class="nav navbar-nav navbar-right">
+          
+          <li><a href="sHome.html"><i class="fas fa-home"></i></a></li>
+          <li><a href="#"><i class="fas fa-bell"></i></a></li>
+          <li><a href="#"><i class="far fa-user"></i></a></li>
+        </ul> 
+      </div>
+    </nav>
+  </header>
+
+<div class="container">
+  <div class="row" id="header1">
+    <div class="col-sm-10"><h4><span class="glyphicon glyphicon-cog"></span> Dashboard <small>| University</small></h4>
+    </div>
+    <div class="col-sm-2">
+      <br>
+
+      <div class="dropdown">
+        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Create Content
+          
+        </button>
+        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+          <ul>
+            <li><a class="dropdown-item" data-toggle="modal" data-target="#addPost">Add post</a></li>
+            <li><a class="dropdown-item" data-toggle="modal" data-target="#addEvent">Create event</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <section id="main">
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-3">
+          <div class="list-group">
+            <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='uHome.html'"><span class="glyphicon glyphicon-cog"></span> 
+              Dashboard
+            </button>
+            <button type="button" class="list-group-item list-group-item-action active main-color-bg" onclick="window.location.href='uPosts.html'"><span class="glyphicon glyphicon-pencil"></span> Posts <span class="badge">12</span></button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='uEventsDashboard.html'">Upcoming events<span class="badge">10</span></button>
+            <button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='uniPageView.html'">Page View</button>
+
+          </div>
+        </div>
+        <div class="col-sm-9">
+          <div class="panel panel-default">
+              <div class="panel-heading main-color-bg">
+                <h3 class="panel-title active main-color-bg">Posts</h3>
+              </div>
+              <div class="panel-body">
+                <div class="row">
+                      <div class="col-md-12">
+                          <input class="form-control" type="text" placeholder="Filter Pages...">
+                      </div>
+                </div>
+                <br>
+                <table class="table table-striped table-hover">
+                      <tr>
+                        <th>Title</th>
+                        <th>Published</th>
+                        <th>Created</th>
+                        <th></th>
+                      </tr>
+                      <tr>
+                        <td>Post1</td>
+                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        <td>Dec 12, 2016</td>
+                        <td><a class="btn btn-default" href="postView.html">View Post</a> <a class="btn btn-default" href="editPost.html">Edit</a> <a class="btn btn-primary" href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td>Post2</td>
+                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        <td>Dec 13, 2016</td>
+                        <td><a class="btn btn-default" href="postView.html">View Post</a> <a class="btn btn-default" href="editPost.html">Edit</a> <a class="btn btn-primary" href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td>Post3</td>
+                        <td><span class="glyphicon glyphicon-remove" aria-hidden="true"></span></td>
+                        <td>Dec 13, 2016</td>
+                        <td><a class="btn btn-default" href="postView.html">View Post</a> <a class="btn btn-default" href="editPost.html">Edit</a> <a class="btn btn-primary" href="#">Delete</a></td>
+                      </tr>
+                      <tr>
+                        <td>Post4</td>
+                        <td><span class="glyphicon glyphicon-ok" aria-hidden="true"></span></td>
+                        <td>Dec 14, 2016</td>
+                        <td><a class="btn btn-default" href="postView.html">View Post</a> <a class="btn btn-default" href="editPost.html">Edit</a> <a class="btn btn-primary" href="#">Delete</a></td>
+                      </tr>
+                    </table>
+              </div>
+              </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- modals -->
+  <!-- add posts -->
+
+  <div class="modal fade" id="addPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add post</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Add a caption</label>
+              <input type="text" class="form-control" placeholder="Caption">
+            </div>
+            <div class="form-group">
+              <label>Add text / image</label>
+              <textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Published
+              </label>
+            </div>
+            <div class="form-group">
+              <label>Meta tags</label>
+              <input type="text" class="form-control" placeholder="Add some tags">
+            </div>
+            <div class="form-group">
+              <label>Meta Description</label>
+              <input type="text" class="form-control" placeholder="Add meta description">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <form>
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Add event</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <div class="form-group">
+              <label>Add a caption</label>
+              <input type="text" class="form-control" placeholder="Caption">
+            </div>
+            <div class="form-group">
+              <label>Add text / image</label>
+              <textarea name="editor5" class="form-control" placeholder="Page Body"></textarea>
+            </div>
+            <div class="form-group">
+              <label>Date</label>
+              <input type="Date" class="form-control" placeholder="00/00/0000">
+            </div>
+            <div class="form-group">
+              <label>Time</label>
+              <input type="Time" class="form-control" placeholder="00:00">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Published
+              </label>
+            </div>
+            <div class="form-group">
+              <label>Meta tags</label>
+              <input type="text" class="form-control" placeholder="Add some tags">
+            </div>
+            <div class="form-group">
+              <label>Meta Description</label>
+              <input type="text" class="form-control" placeholder="Add meta description">
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary">Save changes</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+  <script>
+    CKEDITOR.replace( 'editor5' );
+  </script>
+  <script>
+    CKEDITOR.replace( 'editor1' );
+  </script>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+  <script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+
+  <script src="/js/plugin/jquery-3.4.0.js"></script>
+  <script src="/js/controller/constants.js"></script>
+  <script src="/js/controller/uPostsController.js"></script>
+
+  
+</body>
+</html>

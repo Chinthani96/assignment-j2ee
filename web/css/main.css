@@ -1,0 +1,25 @@
+.container-fluid{
+	background-color:#4d004d;
+	height:40px;	
+}
+.container{
+	margin-top:8px;
+	
+}
+
+#events{
+	background-color: #CCC;
+	text-align: center;
+	height: 100%;
+}
+#posts{
+	background-color: #9C8AA5 ;
+	text-align: center;
+	height:100%;
+
+}
+#vaccancies{
+	background-color: #CCC;
+	text-align: center;
+	height:100%;
+}

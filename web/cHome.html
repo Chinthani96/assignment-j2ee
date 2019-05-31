@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="cache-control" content="max-age=0" />
+	<meta http-equiv="cache-control" content="no-cache" />
+	<meta http-equiv="expires" content="0" />
+	<meta http-equiv="expires" content="Tue, 01 Jan 1980 1:00:00 GMT" />
+	<meta http-equiv="pragma" content="no-cache" />
+	<title>Company | Dashboard</title>
+	<link rel="stylesheet" href="css/main2.css" type="text/css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+
+</head>
+<body>
+	<!-------------------------------------------------------- NAVBAR!!!!!!!! ----------------------------------------------------------------------------->
+	
+	<header class="header">
+		<nav class="navbar navbar-style">
+			<div class="container">
+				<div class="navbar-header">
+						<img class="logo" src="img/logo2.jpg">areer | GO<img class="logo" src="img/logo3.png">
+					</div>
+				<ul class="nav navbar-nav navbar-right">
+					
+					<li><a href="index.html"><i class="fas fa-home"></i></a></li>
+					<li><a href="#"><i class="fas fa-bell"></i></a></li>
+					<li><a href="#"><i class="far fa-user"></i></a></li>
+				</ul>	
+			</div>
+		</nav>
+	</header>
+
+<div class="container">
+	<div class="row" id="header1">
+		<div class="col-sm-10"><h4><span class="glyphicon glyphicon-cog"></span> Dashboard <small>| Company Name</small></h4>
+		</div>
+		<div class="col-sm-2">
+			<br>
+
+			<div class="dropdown">
+				<button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"> Create Content
+					
+				</button>
+				<div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+					<a class="dropdown-item" type-="button" data-toggle="modal" data-target="#addPost">Add post</a>
+					<a class="dropdown-item" type-="button" data-toggle="modal" data-target="#addEvent">Create event</a>
+					<a class="dropdown-item" type-="button" data-toggle="modal" data-target="#addVaccancy">Create Vacancies</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<section id="main">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-3">
+					<div class="list-group">
+						<button type="button" class="list-group-item list-group-item-action active main-color-bg" onclick="window.location.href='cHome.html'"><span class="glyphicon glyphicon-cog"></span>
+							Dashboard
+						</a></button>
+						<button type="button" class="list-group-item list-group-item-action" href="posts.html" onclick="window.location.href='cPosts.html'"><span class="glyphicon glyphicon-pencil"></span>Posts<span class="badge">12</span></button>
+						<button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='vacanciesDashboard.html'">Vaccancies<span class="badge">10</span></button>
+						<button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='cEventsDashboard.html'">Events</button>
+						<button type="button" class="list-group-item list-group-item-action" onclick="window.location.href='compPageView.html'">Page View</button>
+						
+					</div>
+				</div>
+				<div class="col-sm-9">
+					<div class="panel panel-default">
+						<div class="panel-heading">
+							<h3 class="panel-title">Overview</h3>
+						</div>
+						<div class="panel-body">
+							<div class="col-sm-3">
+								<div class="well dash-style">
+									<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 100</h2>
+									<h4>Subscribers</h4>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="well dash-style">
+									<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 100</h2>
+									<h4>Vaccancies</h4>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="well dash-style">
+									<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 1K</h2>
+									<h4>Applicants</h4>
+								</div>
+							</div>
+							<div class="col-sm-3">
+								<div class="well dash-style">
+									<h2><span class="glyphicon glyphicon-user" aria-hidden="true"></span> 100</h2>
+									<h4>Page Visits</h4>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="row">
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<h3 class="panel-title">
+							<p class="">Average income of executives</p>
+						</h3>
+					</div>
+					<div class="panel-body">
+						<div class="row">
+						<div class="col-sm-9">
+							GRAPH
+						</div>
+						<div class="col-sm-3">
+							<p class="post-info">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+							tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+							quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+							consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+							cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+							proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+						</div>
+						</div>
+					</div>
+				</div>
+			</div>		</div>
+	</section>
+
+	<!-- modals -->
+	<!-- add posts -->
+
+	<div class="modal fade" id="addPost" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Add post</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Add a caption</label>
+							<input type="text" class="form-control" placeholder="Caption">
+						</div>
+						<div class="form-group">
+							<label>Add text / image</label>
+							<textarea name="editor1" class="form-control" placeholder="Page Body"></textarea>
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Published
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Meta tags</label>
+							<input type="text" class="form-control" placeholder="Add some tags">
+						</div>
+						<div class="form-group">
+							<label>Meta Description</label>
+							<input type="text" class="form-control" placeholder="Add meta description">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Create Post</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<div class="modal fade" id="addEvent" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Add event</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Add a caption</label>
+							<input type="text" class="form-control" placeholder="Caption">
+						</div>
+						<div class="form-group">
+							<label>Add text / image</label>
+							<textarea name="editor5" class="form-control" placeholder="Page Body"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Date</label>
+							<input type="Date" class="form-control" placeholder="00/00/0000">
+						</div>
+						<div class="form-group">
+							<label>Time</label>
+							<input type="Time" class="form-control" placeholder="00:00">
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Published
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Meta tags</label>
+							<input type="text" class="form-control" placeholder="Add some tags">
+						</div>
+						<div class="form-group">
+							<label>Meta Description</label>
+							<input type="text" class="form-control" placeholder="Add meta description">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Post Event</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<div class="modal fade" id="addVaccancy" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<form>
+					<div class="modal-header">
+						<h5 class="modal-title" id="exampleModalLabel">Create Vacancy</h5>
+						<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+							<span aria-hidden="true">&times;</span>
+						</button>
+					</div>
+					<div class="modal-body">
+						<div class="form-group">
+							<label>Designation</label>
+							<input type="text" class="form-control" placeholder="Caption">
+						</div>
+						<div class="form-group">
+							<label>Details</label>
+							<textarea name="editor1" class="form-control" placeholder="Details of the Vaccancy"></textarea>
+						</div>
+						<div class="form-group">
+							<label>Image</label>
+							<input type="img" class="form-control" placeholder="">
+						</div>
+						<div class="form-group">
+							<label>Requirements</label>
+							<input type="text" class="form-control" placeholder="Requirements">
+						</div>
+						<div class="checkbox">
+							<label>
+								<input type="checkbox"> Published
+							</label>
+						</div>
+						<div class="form-group">
+							<label>Meta tags</label>
+							<input type="text" class="form-control" placeholder="Add some tags">
+						</div>
+						<div class="form-group">
+							<label>Meta Description</label>
+							<input type="text" class="form-control" placeholder="Add meta description">
+						</div>
+					</div>
+					<div class="modal-footer">
+						<button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+						<button type="submit" class="btn btn-primary">Create Vacancy</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	<script>
+		CKEDITOR.replace( 'editor1' );
+	</script>
+	<script>
+		CKEDITOR.replace( 'editor5' );
+	</script>
+	<script>
+		CKEDITOR.replace( 'editor1' );
+	</script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<script src="https://cdn.ckeditor.com/4.11.3/standard/ckeditor.js"></script>
+	<script src="/js/plugin/jquery-3.4.0.js"></script>
+	<script src="/js/controller/constants.js"></script>
+	<script src="/js/controller/cHomeController.js"></script>
+
+
+</body>
+</html>
